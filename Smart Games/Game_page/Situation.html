@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../assets/css/style_situation.css"> 
+	<link rel="shortcut icon" href="../assets/image/Brain.png" type="image/x-icon">
+
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<script src="https://kit.fontawesome.com/d8485cae70.js" crossorigin="anonymous"></script>
+
+	<title>Smart games/Умные игры Онлайн</title>
+</head>
+
+<body>
+	<header class="header " id="header" >
+			<div class="container">
+				<div class="header__inner">
+					<div class="header_logo">
+						<a class="logo_link" href="../Main.html"><img class="header_img" src="../assets/image/Brain.png" width="30px" height="30px"></a>
+						<a class="logo_link" href="../Main.html">Smart Games</a>
+					</div>
+					<nav class="nav" id="nav">
+						<a class="nav_link" href="../Main.html#about" >О нас</a>
+						<a class="nav_link" href="../Mains.html#service" >Сервис</a>
+						<a class="nav_link" href="../Main.html#footer" >Блог</a>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+	<section class="section">
+		<div class="container">
+			<div class="section_header">
+				<h3 class="section_suptitle">" Опасные ситуации "</h3>
+				<h2 class="section_title">Иллюстрация ситуации</h2>
+				<div class="section_text">
+					<p>
+						Начните игру, чтобы вопросы появились!
+					</p>
+				</div>
+			</div>
+
+			<div class="wedo">
+				<div class="wedo_item">
+
+					<div id="game" class="windows_game" onclick="close()">
+						<div id="blink1" class="play_game">Начать игру!</div>
+						<div id="onground" class="game_result_img"></div>
+					</div>
+
+				</div>
+
+				<!-- Кнопки с ответами -->
+				<div class="wedo_item">
+					<div class="btn_answer">
+						<!-- Кнопки -->
+						<button class="wedo_btn true"></button>
+
+						<button class="wedo_btn false"></button>
+
+						<button class="wedo_btn false"></button>
+
+						<button class="wedo_btn false"></button>
+
+						<button class="wedo_btn wedo_btn--proceed">Продолжить</button>
+					</div>
+
+					<!-- Аккордион -->
+					<div id="accordion" class="accordion">
+						<div class="accordion_item" data-collapse="#wedo_1">
+							<div class="accordion_header ">
+								<img src="../assets/image/plus-512.png" width="35px" height="35px" alt="" class="accordion_icon">
+								<div class="accordion_title">Описание</div>
+							</div>
+							<div class="accordion_content" id="wedo_1">
+								Ситуативная игра!
+							</div>
+						</div>
+						<div class="accordion_item " data-collapse="#wedo_2">
+							<div class="accordion_header">
+								<img src="../assets/image/plus-512.png" width="35px" height="35px" alt="" class="accordion_icon">
+								<div class="accordion_title">Категория</div>
+							</div>
+							<div class="accordion_content" id="wedo_2">
+								Логическое мышление.Умение реагировать в опасных жизненых ситуациях
+							</div>
+						</div>
+						<div class="accordion_item" data-collapse="#wedo_3">
+							<div class="accordion_header">
+								<img src="../assets/image/plus-512.png" width="35px" height="35px" alt="" class="accordion_icon">
+								<div class="accordion_title">Уровень сложности</div>
+							</div>
+							<div class="accordion_content" id="wedo_3">
+								Средний
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../assets/js/Situation_game.js"></script>
+    <script src="../assets/js/app.js"></script>
+	
+</body>
+</html>

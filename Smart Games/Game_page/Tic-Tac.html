@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../Assets/Css/style_tic-tac.css" >
+	<link rel="shortcut icon" href="../Assets/Image/Brain.png" type="image/x-icon">
+
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<script src="https://kit.fontawesome.com/d8485cae70.js" crossorigin="anonymous"></script>
+
+	<title>Smart games/Умные игры Онлайн</title>
+</head>
+
+<body>
+	<header class="header " id="header" >
+			<div class="container">
+				<div class="header__inner">
+					<div class="header_logo">
+						<a class="logo_link" href="../Main.html"><img class="header_img" src="../Assets/Image/Brain.png" width="30px" height="30px"></a>
+						<a class="logo_link" href="../Main.html">Smart Games</a>
+					</div>
+					<nav class="nav" id="nav">
+						<a class="nav_link" href="../Main.html#about" >О нас</a>
+						<a class="nav_link" href="../Main.html#service" >Сервис</a>
+						<a class="nav_link" href="../Main.html#footer" >Блог</a>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+	<section class="section">
+		<div class="container">
+			<div class="section_header">
+				<h3 class="section_suptitle">Крестики-нолики / Tic tac toe</h3>
+				<h2 class="section_title">История</h2>
+				<div class="section_text">
+					<p>
+						Первоначально игра «Крестики-нолики» называлась «Херики-оники». И произошло это в 1918 году, когда о реформе правописания еще не было и речи.
+						Уже тогда это была самая популярная игра с письмами как среди детей, так и среди взрослых.
+						Так что название игры не воспринималось как проклятие, это было просто излюбленное времяпрепровождение: перемещение букв алфавита X и O, называемых между игроками «она» и «оно». Отсюда и название самой головоломки.
+					</p>
+				</div>
+			</div>
+			<div class="wedo">
+				<div class="wedo_item">
+					<div class="content">
+						<div class="currentPlayer">
+							<span>Сейчас ходит: <span id="curPlyr">X</span></span>
+						</div>
+
+						<div id="area"></div>
+
+						<div class="stat">
+							<table>
+								<th colspan="2">Статистика</th>
+								<tr>
+									<td>X</td>
+									<td><span id="sX">0</span></td>
+								</tr>
+								<tr>
+									<td>O</td>
+									<td><span id="sO">0</span></td>
+								</tr>
+								<tr>
+									<td>Ничьи</td>
+									<td><span id="sD">0</span></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="wedo_item">
+					<div class="accordion">
+						<div class="accordion_item" data-collapse="#wedo_1">
+							<div class="accordion_header ">
+								<img src="../assets/image/plus-512.png" width="35px" height="35px" alt="" class="accordion_icon">
+								<div class="accordion_title">Описание</div>
+							</div>
+							<div class="accordion_content" id="wedo_1">
+								Игроки по очереди ставят на свободные клетки поля 3×3 знаки (один всегда крестики, другой всегда нолики). Первый, выстроивший в ряд 3 своих фигуры по вертикали, горизонтали или диагонали, выигрывает. Первый ход делает игрок, ставящий крестики. Обычно по завершении партии выигравшая сторона зачёркивает чертой свои три знака (нолика или крестика), составляющих сплошной ряд.
+							</div>
+						</div>
+						<div class="accordion_item " data-collapse="#wedo_2">
+							<div class="accordion_header">
+								<img src="../assets/image/plus-512.png" width="35px" height="35px" alt="" class="accordion_icon">
+								<div class="accordion_title">Категория</div>
+							</div>
+							<div class="accordion_content" id="wedo_2">
+								Быстрое мышление. Логика
+							</div>
+						</div>
+						<div class="accordion_item" data-collapse="#wedo_3">
+							<div class="accordion_header">
+								<img src="../assets/image/plus-512.png" width="35px" height="35px" alt="" class="accordion_icon">
+								<div class="accordion_title">Уровень сложности</div>
+							</div>
+							<div class="accordion_content" id="wedo_3">
+								Средний
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="../assets/js/app.js"></script>
+	<script src="../assets/js/Tic Tac Toe.js"></script>
+	
+</body>
+</html>
